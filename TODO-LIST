@@ -1,1 +1,37 @@
-TODO LIST
+###############################
+###############################
+# SETUP PROJECT
+###############################
+###############################
+https://github.com/new
+
+###############################
+###############################
+# INFRASTRUCTURE
+###############################
+###############################
+https://travis-ci.org/
+
+
+
+###############################
+###############################
+# FEATURES
+###############################
+###############################
+
+###############################
+## EARTHQUAKE
+###############################
+https://earthquake.usgs.gov/earthquakes/feed/
+
+###############################
+## WEATHER
+###############################
+# Getting NOAA data
+https://github.com/sudohippie/weather-noaa
+
+# openweathermap
+https://openweathermap.org/examples
+https://openweathermap.org/examples#java
+https://github.com/migtavares/owmClient
