@@ -1,6 +1,14 @@
 package org.universe.world.app;
 
-import org.apache.log4j.Logger;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+//import org.apache.log4j.Logger;
 
 public class CompApp {
 
@@ -20,12 +28,46 @@ public class CompApp {
 	// Set java version
 	// https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
 
+
+
 	/* Get actual class name to be printed on */
-	static Logger log = Logger.getLogger(CompApp.class.getName());
+	//static Logger log = Logger.getLogger(CompApp.class.getName());
+
+	static Logger logger = LoggerFactory.getLogger(CompApp.class);
+
+	private static void readConfig() {
+		File configFile = new File("config.properties");
+
+		try {
+			FileReader reader = new FileReader(configFile);
+			Properties props = new Properties();
+			props.load(reader);
+
+			String host = props.getProperty("host");
+			System.out.println("Host name is: " + host);
+
+			String port = props.getProperty("port");
+			System.out.println("Port number is: " + port);
+
+			reader.close();
+		} catch (FileNotFoundException ex) {
+			// file does not exist
+		} catch (IOException ex) {
+			// I/O error
+		}
+	}
 
 	public static void main(final String[] args) {
-		log.debug("Hello Universe this is a debug message");
-		log.info("Hello Universe this is an info message");
+
+		readConfig();
+
+		//log.debug("Hello Universe this is a debug message");
+		//log.info("Hello Universe this is an info message");
+
+		logger.info("Hello Universe this is an info message");
+		logger.debug("Hello Universe this is an debug message");
+		logger.error("Hello Universe this is an error message");
+		
 	}
 
 }

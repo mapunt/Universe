@@ -10,15 +10,30 @@ https://github.com/new
 # INFRASTRUCTURE
 ###############################
 ###############################
+# CI
 https://travis-ci.org/
+https://stackshare.io/circleci/how-circleci-processes-4-5-million-builds-per-month?utm_content=buffer57005&utm_medium=Social&utm_source=LinkedIn&utm_campaign=Buffer
+https://circleci.com/?utm_source=stackshare&utm_campaign=stackshare?ref=stackshare_guestpost
 
+# MAVEN
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
+# LOGGER
+https://www.slf4j.org/manual.html
 
 ###############################
 ###############################
 # FEATURES
 ###############################
 ###############################
+
+###############################
+## CONFIGURATION
+###############################
+http://commons.apache.org/proper/commons-configuration/
+https://commons.apache.org/proper/commons-configuration/userguide/howto_properties.html
+http://www.codejava.net/coding/reading-and-writing-configuration-for-java-application-using-properties-class
+http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/jcp/properties.html
 
 ###############################
 ## EARTHQUAKE
@@ -35,3 +50,9 @@ https://github.com/sudohippie/weather-noaa
 https://openweathermap.org/examples
 https://openweathermap.org/examples#java
 https://github.com/migtavares/owmClient
+
+
+###############################
+## COMMUNICATIONS
+###############################
+https://developers.google.com/protocol-buffers/
