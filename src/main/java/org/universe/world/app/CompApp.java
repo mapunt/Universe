@@ -8,8 +8,12 @@ import java.util.Properties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+// TODO: Auto-generated Javadoc
 //import org.apache.log4j.Logger;
 
+/**
+ * The Class CompApp.
+ */
 public class CompApp {
 
 	// http://www.vogella.com/tutorials/Logging/article.html
@@ -33,8 +37,12 @@ public class CompApp {
 	/* Get actual class name to be printed on */
 	//static Logger log = Logger.getLogger(CompApp.class.getName());
 
-	static Logger logger = LoggerFactory.getLogger(CompApp.class);
+	/** The logger. */
+	private static Logger logger = LoggerFactory.getLogger(CompApp.class);
 
+	/**
+	 * Read config.
+	 */
 	private static void readConfig() {
 		File configFile = new File("config.properties");
 
@@ -57,6 +65,11 @@ public class CompApp {
 		}
 	}
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(final String[] args) {
 
 		readConfig();
